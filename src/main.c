@@ -53,7 +53,7 @@ int main()
     int_vector_push_back(a, 2);
     printVector(a);
 
-    printf("\nint_vector_pop_back. Удалим посдеднюю двойку\n"); 
+    printf("\nint_vector_pop_back. Удалим последнюю двойку\n"); 
     int_vector_pop_back(a);
     printVector(a);
 
