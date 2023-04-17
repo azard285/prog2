@@ -43,9 +43,11 @@ IntVector *int_vector_copy(const IntVector *v)//Указатель на копи
 }
 
 void int_vector_free(IntVector *v)//Освобождает память, выделенную для вектора
-{
-    free(v->data);
-    free(v);
+{   
+    if (v){
+        free(v->data);
+        free(v);
+    {
 }
 
 int int_vector_get_item(const IntVector *v, size_t index)//возвращает элемент под номером index
